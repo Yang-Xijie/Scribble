@@ -44,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				48CEFB3C27D4B83B00959437 /* README.md */,
+				48CEFB3A27D4B5EC00959437 /* License Razeware LLC */,
 				82B1754F1C0A7A2000A199A6 /* Scribble */,
 				82B1754E1C0A7A2000A199A6 /* Products */,
 			);
@@ -63,7 +64,6 @@
 				82B175501C0A7A2000A199A6 /* AppDelegate.swift */,
 				82B175521C0A7A2000A199A6 /* ViewController.swift */,
 				82B175621C0A7A7D00A199A6 /* CanvasView.swift */,
-				48CEFB3A27D4B5EC00959437 /* License Razeware LLC */,
 				82B1755C1C0A7A2100A199A6 /* Info.plist */,
 				82B175571C0A7A2000A199A6 /* Assets.xcassets */,
 				82B175541C0A7A2000A199A6 /* Main.storyboard */,
