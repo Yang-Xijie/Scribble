@@ -1,12 +1,10 @@
 import UIKit
 
-let π = CGFloat(Double.pi)
-
 class CanvasView: UIImageView {
     // Parameters
     private let defaultLineWidth: CGFloat = 6
     private let forceSensitivity: CGFloat = 4.0
-    private let tiltThreshold = π / 6 // 30º
+    private let tiltThreshold = CGFloat.pi / 6 // 30º
     private let minLineWidth: CGFloat = 5
 
     private var drawingImage: UIImage?
@@ -112,16 +110,16 @@ class CanvasView: UIImageView {
         var angle = abs(atan2(vector2.y, vector2.x) - atan2(vector1.dy, vector1.dx))
 
         // 5
-        if angle > π {
-            angle = 2 * π - angle
+        if angle > CGFloat.pi {
+            angle = 2 * CGFloat.pi - angle
         }
-        if angle > π / 2 {
-            angle = π - angle
+        if angle > CGFloat.pi / 2 {
+            angle = CGFloat.pi - angle
         }
 
         // 6
         let minAngle: CGFloat = 0
-        let maxAngle = π / 2
+        let maxAngle = CGFloat.pi / 2
         let normalizedAngle = (angle - minAngle) / (maxAngle - minAngle)
 
         // 7
